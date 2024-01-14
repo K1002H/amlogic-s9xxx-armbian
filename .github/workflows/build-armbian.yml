@@ -15,6 +15,7 @@ on:
         default: "focal"
         type: choice
         options:
+          - focal
           - jammy
           - lunar
           - mantic
