@@ -16,7 +16,7 @@ on:
       armbian_board:
         description: "Select device board."
         required: false
-        default: "all"
+        default: "s905x3-hk1"
         type: choice
         options:
           - all
@@ -209,7 +209,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
     if: ${{ github.event.repository.owner.id }} == ${{ github.event.sender.id }}
 
     steps:
